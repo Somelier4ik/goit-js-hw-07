@@ -6,6 +6,16 @@
   list-style: none;
 }
 
+#counter {
+  margin: 40px;
+}
+
+#counter button {
+  padding: 5px 30px;
+  background-color: rgb(66, 148, 255);
+  border-radius: 3px;
+}
+
 #validation-input {
   border: 3px solid #bdbdbd;
 }
