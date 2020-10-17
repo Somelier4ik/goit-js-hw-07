@@ -26,6 +26,7 @@ function randomColor() {
 let startBoxWidthHeigth = 20;
 
 function handleCreateBoxes() {
+  let arrBoxes = [];
   for (let i = 0; i < amount; i += 1) {
     const divRef = document.createElement("div");
     divRef.textContent = "div";
@@ -33,7 +34,8 @@ function handleCreateBoxes() {
     divRef.style.width = `${startBoxWidthHeigth + 10}px`;
     divRef.style.height = `${startBoxWidthHeigth + 10}px`;
     startBoxWidthHeigth += 10;
-    refs.boxes.appendChild(divRef);
-    console.log(divRef.style.width);
+    arrBoxes.push(divRef);
   }
+
+  refs.boxes.append(...arrBoxes);
 }
